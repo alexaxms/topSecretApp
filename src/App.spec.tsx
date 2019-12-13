@@ -5,7 +5,6 @@ import App from "./App";
 describe("App component", () => {
   test("should be defined", () => {
     const component = shallow(<App />);
-
-    expect(component).toMatchSnapshot();
+    expect(component).toBeDefined();
   });
 });
