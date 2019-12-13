@@ -1,7 +1,7 @@
 {
   "name": "top_secret_app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -16,7 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll",
+    "test": "react-scripts test  --coverage --watchAll=false",
+    "coveralls": "cat coverage/lcov.info | coveralls",
     "eject": "react-scripts eject",
     "format": "prettier \"src/**/*.{ts,tsx,css,scss}\"",
     "format:check": "npm run format -- --check",
@@ -42,6 +43,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "coveralls": "^3.0.9",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
@@ -58,9 +60,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
-      "!src/index.tsx", 
-      "!src/react-app-env.d.ts", 
-      "!src/serviceWorker.ts", 
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/serviceWorker.ts",
       "!<rootDir>/node_modules/"
     ]
   }
