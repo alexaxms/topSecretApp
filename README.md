@@ -1,5 +1,5 @@
 <a href="https://codeclimate.com/github/alexaxms/topSecretApp/maintainability"><img src="https://api.codeclimate.com/v1/badges/c29d7e76404aabe824f3/maintainability" /></a>
-<a href="https://codeclimate.com/github/alexaxms/topSecretApp/test_coverage"><img src="https://api.codeclimate.com/v1/badges/c29d7e76404aabe824f3/test_coverage" /></a>
+[![Coverage Status](https://coveralls.io/repos/github/alexaxms/topSecretApp/badge.svg?branch=master)](https://coveralls.io/github/alexaxms/topSecretApp?branch=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
