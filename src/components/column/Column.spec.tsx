@@ -14,7 +14,7 @@ describe("Column component", () => {
     columns = null;
   });
 
-  test("should component is instantiated correctly", () => {
+  test("should component be instantiated correctly", () => {
     const [column] = columns;
     const { tasks } = column;
     const component = shallow(<Column column={column} tasks={tasks} />);

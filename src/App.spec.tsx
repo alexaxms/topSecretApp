@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import App from "./App";
 
 describe("App component", () => {
-  test("should component is instantiated correctly", () => {
+  test("should component be instantiated correctly", () => {
     const component = shallow(<App />);
     expect(component).toBeDefined();
   });

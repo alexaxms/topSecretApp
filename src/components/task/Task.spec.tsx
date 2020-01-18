@@ -14,7 +14,7 @@ describe("Task component", () => {
     tasks = null;
   });
 
-  test("should component is instantiated correctly", () => {
+  test("should component be instantiated correctly", () => {
     const [task] = tasks;
     const component = shallow(<Task index={0} task={task} />);
     expect(component).toBeDefined();
