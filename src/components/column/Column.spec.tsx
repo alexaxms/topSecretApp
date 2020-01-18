@@ -1,10 +1,22 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Column from "./Column";
-import { column, tasks } from "mocks/mocks";
+import { ColumnsGenerator } from "__mocks__/generators";
 
 describe("Column component", () => {
+  let columns: any;
+
+  beforeAll(async () => {
+    columns = await ColumnsGenerator();
+  });
+
+  afterEach(() => {
+    columns = null;
+  });
+
   test("should component is instantiated correctly", () => {
+    const [column] = columns;
+    const { tasks } = column;
     const component = shallow(<Column column={column} tasks={tasks} />);
     expect(component).toBeDefined();
   });
