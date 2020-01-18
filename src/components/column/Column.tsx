@@ -3,6 +3,7 @@ import Task from "../task/Task";
 import { Droppable } from "react-beautiful-dnd";
 const styles = require("./Column.module.scss");
 
+// TODO: improve types
 interface IColumn {
   column: { id: string; title: string };
   tasks: { id: string; content: string }[];
@@ -17,6 +18,7 @@ const Column: React.FC<IColumn> = ({ column, tasks }: any) => {
           <div
             ref={provied.innerRef}
             {...provied.droppableProps}
+            // TODO: improve conditional styles
             className={`${styles.tasksList} ${
               snapshot.isDraggingOver ? styles.lightblue : styles.white
             }`}

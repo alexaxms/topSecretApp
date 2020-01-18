@@ -3,10 +3,12 @@ import Column from "../column/Column";
 import { DragDropContext } from "react-beautiful-dnd";
 import initialData from "../../helpers/initial-data";
 
+// TODO: improve types
 const Board: React.FC = () => {
   const [data, setData]: any = useState(initialData);
 
   const onDragEnd = (drag: any) => {
+    // TODO: immutability-helper
     const { destination, source, draggableId } = drag;
 
     if (!destination) {
