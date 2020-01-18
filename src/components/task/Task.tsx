@@ -1,14 +1,14 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
+import { ITask } from "models";
 const styles = require("./Task.module.scss");
 
-// TODO: improve types
-interface ITask {
+interface ITaskProps {
   index: number;
-  task: { id: string; content: string };
+  task: ITask;
 }
 
-const Task: React.FC<ITask> = ({ task, index }) => {
+const Task: React.FC<ITaskProps> = ({ task, index }) => {
   return (
     <Draggable draggableId={task.id} index={index}>
       {(provided, snapshot) => (

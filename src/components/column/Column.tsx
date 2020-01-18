@@ -1,15 +1,15 @@
 import React from "react";
 import Task from "components/task/Task";
 import { Droppable } from "react-beautiful-dnd";
+import { IColumn, ITask } from "models";
 const styles = require("./Column.module.scss");
 
-// TODO: improve types
-interface IColumn {
-  column: { id: string; title: string };
-  tasks: { id: string; content: string }[];
+interface IColumnProps {
+  column: IColumn;
+  tasks: ITask[];
 }
 
-const Column: React.FC<IColumn> = ({ column, tasks }: any) => {
+const Column: React.FC<IColumnProps> = ({ column, tasks }: any) => {
   return (
     <div className={styles.columnContainer}>
       <h3 className={styles.title}>{column.title}</h3>

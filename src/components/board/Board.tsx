@@ -3,7 +3,6 @@ import Column from "components/column/Column";
 import { DragDropContext } from "react-beautiful-dnd";
 import initialData from "helpers/initial-data";
 
-// TODO: improve types
 const Board: React.FC = () => {
   const [data, setData]: any = useState(initialData);
 
