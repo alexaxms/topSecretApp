@@ -1,5 +1,5 @@
 import React from "react";
-import Task from "../task/Task";
+import Task from "components/task/Task";
 import { Droppable } from "react-beautiful-dnd";
 const styles = require("./Column.module.scss");
 

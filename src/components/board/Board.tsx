@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Column from "../column/Column";
+import Column from "components/column/Column";
 import { DragDropContext } from "react-beautiful-dnd";
-import initialData from "../../helpers/initial-data";
+import initialData from "helpers/initial-data";
 
 // TODO: improve types
 const Board: React.FC = () => {

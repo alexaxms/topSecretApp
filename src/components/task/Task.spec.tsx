@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import Task from "./Task";
-import { tasks } from "../../mocks/mocks";
+import { tasks } from "mocks/mocks";
 
 describe("Task component", () => {
   test("should component is instantiated correctly", () => {
