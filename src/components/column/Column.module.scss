@@ -1,0 +1,21 @@
+.columnContainer {
+  margin: 8px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+
+  .title {
+    padding: 8px;
+  }
+
+  .tasksList {
+    padding: 8px;
+
+    &.lightblue {
+      background-color: lightblue;
+    }
+
+    &.white {
+      background-color: white;
+    }
+  }
+}
