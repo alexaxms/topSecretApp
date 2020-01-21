@@ -1,7 +1,8 @@
 import React from "react";
 import Task from "components/task/Task";
 import { Droppable } from "react-beautiful-dnd";
-import { IColumn, ITask } from "models";
+import { IColumn } from "models/column";
+import { ITask } from "models/task";
 const styles = require("./Column.module.scss");
 
 interface IColumnProps {

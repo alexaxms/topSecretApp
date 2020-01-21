@@ -1,6 +1,6 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
-import { ITask } from "models";
+import { ITask } from "models/task";
 const styles = require("./Task.module.scss");
 
 interface ITaskProps {
