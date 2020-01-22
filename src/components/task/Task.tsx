@@ -17,11 +17,20 @@ const Task: React.FC<ITaskProps> = ({ task, index }) => {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           // TODO: improve conditional styles
-          className={`${styles.taskContainer} ${
-            snapshot.isDragging ? styles.lightgreen : styles.white
-          }`}
+          className={`
+            ${styles.taskContainer} 
+            ${snapshot.isDragging ? styles.dragging : styles.white} 
+          `}
         >
-          {task.content}
+          <img className={styles.image} src={task.avatar} alt="" />
+          <div className={styles.content}>
+            <div className={styles.description}>{task.description}</div>
+            <div className={styles.userName}>
+              <small style={{ backgroundColor: task.nameColor }}>
+                {task.userName}
+              </small>
+            </div>
+          </div>
         </div>
       )}
     </Draggable>

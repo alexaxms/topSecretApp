@@ -20,9 +20,7 @@ const Column: React.FC<IColumnProps> = ({ column, tasks }: any) => {
             ref={provied.innerRef}
             {...provied.droppableProps}
             // TODO: improve conditional styles
-            className={`${styles.tasksList} ${
-              snapshot.isDraggingOver ? styles.lightblue : styles.white
-            }`}
+            className={`${styles.tasksList}`}
           >
             {tasks.map((task: any, index: number) => (
               <Task key={task.id} task={task} index={index}></Task>
