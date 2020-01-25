@@ -1,0 +1,62 @@
+.taskContainer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(152, 153, 153, 0.8) 2px 2px 4px;
+  box-sizing: border-box;
+  min-height: 40px;
+  margin-bottom: 8px;
+  padding: 10px 8px;
+  color: rgb(9, 30, 66);
+  display: flex;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: transparent;
+  touch-action: manipulation;
+  cursor: grab;
+
+  &.dragging {
+    box-shadow: none;
+    outline: none;
+    background-color: rgb(255, 250, 230);
+    border-color: rgba(9, 30, 66, 0.71);
+    box-shadow: rgb(165, 174, 186) 2px 2px 1px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .description {
+      margin: 0;
+      padding: 0;
+      font-style: italic;
+    }
+
+    .userName {
+      display: flex;
+      margin-top: 8px;
+      align-items: center;
+
+      small {
+        color: rgba(9, 30, 66, 0.71);
+        flex-grow: 0;
+        font-weight: normal;
+        margin: 0px;
+        border-radius: 4px;
+        padding: 4px;
+      }
+    }
+  }
+}

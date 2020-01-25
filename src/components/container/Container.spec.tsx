@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import App from "./App";
+import Container from "./Container";
 
-describe("App component", () => {
+describe("Container component", () => {
   test("should component be instantiated correctly", () => {
-    const component = shallow(<App />);
+    const component = shallow(<Container />);
     expect(component).toBeDefined();
   });
 });
